@@ -6,6 +6,8 @@ echo "#### 이 프로그램의 저작권은 ⓒLibert Sin 에 있습니다. ####
 mkdir raw
 mkdir jpg
 
+mv -rfv *.PEF ./raw
+mv -rfv *.pef ./raw
 mv -rfv *.DNG ./raw
 mv -rfv *.dng ./raw
 mv -rfv *.cr2 ./raw
