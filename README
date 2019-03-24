@@ -15,17 +15,23 @@ C로 작성.
 
 코드는 20장씩 30종류를 기준으로 작성.
 
+
 ----
+
 
 · raw_jpg_sort.sh
 · raw_jpt_sort.bat 
+
 sh는 리눅스, bat는 윈도용 스크립트.
 RAW와 JPG가 같이 있는 폴더에 스크립트를 위치하고 실행 할 경우
 하위 폴더로 raw와 jpg를 생성 후 각각 분류.
 
+
 ----
 
-raw_autodel.bat
+
+·raw_autodel.bat
+
 윈도용 스크립트.
 raw_jpg_sort로 분류 하고 jpg를 이용해 셀렉을 마친 경우(비 셀렉 파일 삭제)
 jpg폴더에 남아있는 파일과 raw 파일을 비교하여 불필요한 raw 삭제.
