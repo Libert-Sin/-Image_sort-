@@ -1,9 +1,9 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-#define EACH 600
-#define NAME 13
-#define SORT 20
+#define EACH 600 //총 사진 수
+#define NAME 13 //사진파일이름 길이
+#define SORT 20 //분류 갯수
 
 
 
@@ -16,6 +16,7 @@ int main()
 
 	printf("#### 이 프로그램의 저작권은 ⓒLibert Sin 에 있습니다. ####\n 자유로운 배포·수정은 허용하지만 원저작자와 출처를 표시해야 합니다.\n http://photoguraphy.com/\n#############\n\n\n");
 
+//ls 결과 입력
 	system("ls ~/Photoguraphy/ᅟdarktable_exported |grep .jpg > /tmp/lstmp");
 
 	ls_r = fopen("/tmp/lstmp","r");
@@ -29,7 +30,7 @@ int main()
 	fclose(ls_r);
         
 	system("rm -f /tmp/lstmp");
-
+//정리 폴더 생성
 	system("mkdir '~/Photoguraphy/prod'");
 
 	for(i=1; i<=SORT; i++)
@@ -37,7 +38,7 @@ int main()
 		sprintf(cmd,"mkdir '~/Photoguraphy/prod/%d'",i);
 		system(cmd);
 	}
-
+//jpg 순차 이동(mix)
 	j=1;
 	k=1;
 
