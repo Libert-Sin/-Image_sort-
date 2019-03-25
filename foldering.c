@@ -31,11 +31,11 @@ int main()
         
 	system("rm -f /tmp/lstmp");
 //정리 폴더 생성
-	system("mkdir '~/Photoguraphy/prod'");
+	system("mkdir ~/Photoguraphy/prod");
 
 	for(i=1; i<=SORT; i++)
 	{
-		sprintf(cmd,"mkdir '~/Photoguraphy/prod/%d'",i);
+		sprintf(cmd,"mkdir ~/Photoguraphy/prod/%d",i);
 		system(cmd);
 	}
 //jpg 순차 이동(mix)
