@@ -52,7 +52,7 @@ int main()
 
 
 
-		sprintf(cmd,"mv '~/Photoguraphy/ᅟdarktable_exported/%s' '~/Photoguraphy/prod/%d' ", &str[i],j);
+		sprintf(cmd,"mv ~/Photoguraphy/ᅟdarktable_exported/%s ~/Photoguraphy/prod/%d", &str[i],j);
 		system(cmd);
 		j++;
 		k++;
